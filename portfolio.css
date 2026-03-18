@@ -1,0 +1,522 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-style: normal;
+    background-color: rgb(199, 194, 194);
+         font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+header {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: rgb(134, 128, 128);
+    display: flex;
+    justify-content: space-between;
+    padding: 25px;
+    top: 0; 
+    flex-wrap: wrap;
+
+}
+nav {
+    display: flex;
+   justify-content: space-between;
+    width: 100%;
+}
+.language{
+    text-transform: uppercase;
+    font-size: larger;
+    font-weight: bolder ;
+  }
+
+header .spans {
+    font-weight: 500;
+    font-size: medium;
+      display: flex;
+      gap :50px;
+      
+}
+
+a{
+    text-decoration: none;
+    color:black ;
+}
+.spans a:hover {
+    cursor: pointer;
+    text-decoration: underline;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.25);
+}
+
+.login {
+    font-weight: bolder;
+    font-size: large;
+}
+.login a:hover {
+    cursor: pointer;
+    text-decoration: underline;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.25);
+}
+
+section {
+    padding: 12px;
+    text-align: center;
+}
+.section1{
+    padding: 2px;
+}
+.section1 h1{
+    padding-top: 20px;
+}
+.section2 {
+    text-align: center; 
+  display: flex;
+  flex-direction: column;
+}
+.aboutme {
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    margin: 32px auto;
+    padding: 32px;
+    gap: 50px;
+}
+/* img{
+  max-width:100%;
+  height:auto;
+  display:block;
+} */
+.aboutme .image {
+     width: auto;
+    height: auto;
+   
+}
+.aboutme img{
+    width: 192px;
+}
+.detaills {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+.image .accounts a i{
+    color: black;
+        float: left;
+
+}
+.detaills p {
+    margin-top: 2%;
+    line-height: 22px;
+}
+.greetings{
+    font-size: 20px;
+    font-weight: bolder;
+}
+.name {
+    font-size: 18px;
+    font-weight: 600;
+} 
+.detaills h3{
+    padding: 7px;
+    background-color: rgb(235, 231, 231);
+    text-align: center;
+        margin-top: 8px;
+
+  
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    margin: 22px;
+    padding: 22px;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+   
+}
+.projects-one,
+.projects-two{
+   display:flex;
+   justify-content:flex-start;
+   gap:30px;
+   flex-wrap:wrap;
+   max-width:990px;
+   margin: auto;
+   padding: 10px;
+}
+
+.pro {
+    display: block;
+    text-align: center;
+    width: 300px;
+     transition: transform 0.3s ease;
+     
+}
+.pro img{
+    width: 88%; 
+    margin-top: 15px;
+}
+.toread {
+    text-align: left;
+    margin-left: 17px;
+    margin-right: 17px;
+     /* width: 68%; */
+}
+
+h4 {
+    margin-top: 11px;
+    margin-bottom: 11px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.toread .para {
+    line-height: 19px;
+    margin-bottom: 17px;
+    color: rgb(77, 76, 76);
+    min-height: 113px;
+}
+.pro:hover {
+    background-color: rgb(235, 231, 231);
+     transform: scale(0.95);
+    
+   
+}
+.view p {
+   text-transform: lowercase;  
+   font-style: oblique;
+}
+.view p:hover {
+   text-transform: lowercase;  
+    cursor: pointer;
+    text-decoration: underline;
+     text-shadow: 1px 1px 2px rgba(0,0,0,0.25);
+}
+.view a {
+    display: flex;
+    gap: 7px;
+    margin-bottom: 17px;
+}
+.skills {
+    margin: 12px;
+    padding: 12px;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 30px;
+}
+.description {
+    max-width: 35%;
+    display: flex;
+    flex-direction: column;
+    
+}
+.presentation {
+  text-align: left;
+}
+.description p {
+    padding: 13px;
+    line-height: 23px;
+}
+.certificat{
+      width: auto;
+    background-color: rgb(134, 128, 128);
+    border: 1px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.7);
+
+}
+.certificat:hover{
+    cursor: pointer;
+    background-color:  rgb(105, 100, 100);
+}
+.certificat:active {
+    background-color: rgb(134, 128, 128);
+}
+.studied ul {
+     list-style: none; 
+     
+}
+.studied li{
+    text-align: left;
+    padding-left: 17px;
+    padding-right: 17px;
+    font-size: 18px;
+    font-weight: 600;
+    border-bottom: 1.9px solid ;
+}
+.studied li:hover{
+    cursor: pointer;
+    background-color: rgb(235, 231, 231);
+} 
+.row{
+   display: flex;
+   flex-direction: column;  
+   align-items: stretch;    
+   gap: 0;
+  
+}
+.diagonal{
+   transform: rotate(45deg);
+   transition: transform 0.3s ease; 
+ }
+ .diagonal.rotate {
+  transform: rotate(225deg); 
+}
+.class {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 70px;
+    height: 70px;
+    padding: 0 17px;
+}
+.sub-menu-wrap {
+    /* position: absolute; */
+    /* top: 100%;
+    right: 10%; */
+    width: 320px;
+    /* width: 100%; */
+    max-height: 0; /* 0 for to be fixed in JS*/
+    transition: max-height 0.4s ease-in-out;
+    overflow: hidden;
+}
+.sub-menu-wrap.open-menu {
+    max-height: 500px;
+}
+.sub-menu {
+    background-color: rgb(134, 128, 128);
+    padding: 20px;
+    margin: 10px;
+}
+.section4{
+    text-align: center;
+}
+form{
+    max-width: 600px;
+    margin: auto;
+    padding: 10px;
+}
+
+.msg{
+    padding: 8px;
+}
+input{
+    width: 100%;
+    max-width: 300px;
+    padding: 10px;
+    margin: 10px 0;
+    border: 3.5px solid white;
+    box-shadow: 0 0 5px rgba(0,0,0,0.4);
+}
+textarea{
+    width: 100%;
+    max-width: 500px;
+    height: 150px;
+    padding: 1px;
+    border: 2px solid white;
+    box-shadow: 0 0 5px rgba(0,0,0,0.4);
+}
+fieldset {
+    margin: 20px 0;
+    padding: 30px;
+    border: 0px solid  rgb(77, 76, 76);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.7);
+   
+}
+button{
+    width: 100%;
+    max-width: 200px;
+    padding: 12px;
+    margin-top: 20px;
+    background-color: rgb(134, 128, 128);
+    border: 1px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.7);
+      transition: transform 0.3s ease;
+}
+button:hover{
+    cursor: pointer;
+    background-color:  rgb(105, 100, 100);
+    transform: scale(0.95);
+}
+button:active {
+    background-color: rgb(134, 128, 128);
+}
+
+footer {
+    padding: 15px;
+    background-color:black ;
+    color: white;
+    width: auto;
+    text-align: center; 
+}
+.footering {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;  
+}
+.accounts, .line{
+    display: flex;
+    gap: 12px;
+    transition: transform 0.3s ease;
+    justify-content: center;
+}
+.accounts a{
+  width: 25px;
+  height: 25px;
+  border: 2px solid #333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+
+  /* box-shadow: 0 0 5px rgba(0, 0, 0, 0.7); */
+}
+.accounts a:hover{
+    cursor: pointer;
+    /* background-color:  rgb(105, 100, 100); */
+    transform: scale(1.1);
+    /* box-shadow: 0 0 5px rgba(0, 0, 0, 0.7); */
+    box-shadow: inset 0 0 6px rgb(115, 100, 100);
+}
+.accounts a i{
+    color: white;
+    text-align: center;
+}
+.line, .last {
+    font-size: 11px;
+}
+.line span {
+      transition: transform 0.3s ease;
+}
+.line a{
+    color: white;
+}
+.line span:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+@media (max-width:600px){
+
+fieldset{
+    padding:20px;
+}
+
+h1{
+    font-size:22px;
+}
+
+}
+@media (max-width:992px){
+
+header{
+    flex-direction:column;
+    gap:15px;
+    align-items:center;
+}
+
+header .spans{
+    gap:25px;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+.aboutme{
+    flex-direction:column;
+    align-items:center;
+    text-align:center;
+    width:100%;
+    margin:10px;
+    padding:10px;
+}
+
+.detaills{
+    text-align:center;
+}
+
+.skills{
+    flex-direction:column;
+    align-items:center;
+}
+
+.description{
+    max-width:90%;
+}
+
+.projects-one,
+.projects-two{
+    justify-content:center;
+}
+
+}
+@media (max-width:768px){
+
+header{
+    padding:15px;
+}
+
+.language{
+    font-size:18px;
+}
+
+header .spans{
+    gap:15px;
+    font-size:14px;
+}
+
+.aboutme img{
+    width:150px;
+}
+
+.pro{
+    width:100%;
+    max-width:320px;
+}
+
+.skills{
+    gap:15px;
+}
+
+.description p{
+    padding:8px;
+}
+
+.content{
+    margin:10px;
+    padding:10px;
+}
+
+input,
+textarea{
+    max-width:100%;
+}
+
+}
+@media (max-width:480px){
+
+h1{
+    font-size:22px;
+}
+
+h3{
+    font-size:18px;
+}
+
+header .spans{
+    flex-direction:column;
+    gap:10px;
+}
+
+.aboutme{
+    gap:20px;
+}
+
+.pro img{
+    width:100%;
+}
+
+button{
+    max-width:100%;
+}
+
+}
